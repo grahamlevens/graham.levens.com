@@ -47,19 +47,21 @@ h1, h2 { font-family: var(--serif); font-variation-settings: "opsz" 144, "SOFT" 
 
 /* ---------- Header ---------- */
 .head {
-  padding-block: clamp(3rem, 8vw, 6.5rem) clamp(2.5rem, 5vw, 4rem);
+  padding-block: clamp(2.5rem, 6vw, 4.5rem) clamp(1.75rem, 4vw, 2.75rem);
   display: grid;
   gap: 1.5rem;
   align-items: center;
 }
-@media (min-width: 760px) { .head { grid-template-columns: minmax(0, 1fr) 260px; gap: 4rem; } }
 .head h1 { font-size: clamp(2.6rem, 6vw, 4rem); line-height: 1.02; }
-.head .role { color: var(--muted); font-size: 1rem; letter-spacing: 0.02em; margin: 0.9rem 0 0; }
+.head .role { color: var(--muted); font-size: 1rem; letter-spacing: 0.02em; margin: 0.85rem 0 0; }
 .head .intro { font-size: clamp(1.05rem, 1.4vw, 1.2rem); line-height: 1.6; color: var(--ink-2); max-width: 58ch; }
 .head .intro + .intro { margin-top: 1rem; }
 .head .contact { margin-top: 0.75rem; color: var(--ink); font-size: 1rem; display: flex; flex-wrap: wrap; gap: 0.25rem 1.75rem; }
-.cta { background: var(--green); color: #fff; margin-top: clamp(2.5rem, 6vw, 4rem); }
-.cta__in { padding-block: clamp(2.5rem, 5vw, 3.75rem); display: grid; gap: 2rem 4rem; align-items: center; }
+.head__links { margin-top: 1rem; display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; font-size: 0.95rem; font-weight: 500; }
+.head__links a { color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(31, 78, 95, 0.35); padding-bottom: 1px; }
+.head__links a:hover { border-bottom-color: var(--accent); }
+.cta { background: var(--green); color: #fff; margin-top: clamp(2rem, 4vw, 3rem); }
+.cta__in { padding-block: clamp(2rem, 4vw, 3rem); display: grid; gap: 1.5rem 4rem; align-items: center; }
 @media (min-width: 760px) { .cta__in { grid-template-columns: 1fr auto; } }
 .cta h2 { color: #fff; font-size: clamp(1.9rem, 3.5vw, 2.6rem); line-height: 1.05; margin: 0; }
 .cta__note { margin: 0.75rem 0 0; font-size: 0.8rem; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 600; color: rgba(255,255,255,0.72); }
